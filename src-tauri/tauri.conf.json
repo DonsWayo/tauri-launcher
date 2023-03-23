@@ -11,6 +11,11 @@
     "version": "0.0.0"
   },
   "tauri": {
+    "systemTray": {
+      "iconPath": "icons/icon.png",
+      "iconAsTemplate": true,
+      "menuOnLeftClick": false
+    },
     "allowlist": {
       "all": false,
       "shell": {
@@ -39,10 +44,15 @@
     "windows": [
       {
         "fullscreen": false,
-        "resizable": true,
-        "title": "tauri-launcher",
-        "width": 800,
-        "height": 600
+        "height": 600,
+        "resizable": false,
+        "title": "menubar",
+        "width": 600,
+        "visible": false,
+        "hiddenTitle": true,
+        "decorations": false,
+        "focus": false,
+        "transparent": false
       }
     ]
   }
